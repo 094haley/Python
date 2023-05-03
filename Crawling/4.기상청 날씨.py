@@ -48,7 +48,7 @@ for tr in trs:
     sql += "`col12`={},".format('null' if tds[11].text.strip() == '' else "'"+tds[11].text+"'")
     sql += "`col13`={},".format('null' if tds[12].text.strip() == '' else "'"+tds[12].text+"'")
     sql += "`col14`={},".format('null' if tds[13].text.strip() == '' else "'"+tds[13].text+"'")
-    sql += "`rdtae`=NOW();"
+    sql += "`rdate`=NOW();"
 
     cur.execute(sql)
     conn.commit()
